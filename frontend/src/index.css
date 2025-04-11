@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Custom Toastify Styles */
+.Toastify__toast {
+    border-radius: 14px;
+    background: rgba(30, 41, 59, 0.75); /* Tailwind's bg-slate-800 with opacity */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 195, 255, 0.3);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .Toastify__toast--success {
+    border-left: 6px solid #22c55e; /* Green */
+  }
+  
+  .Toastify__toast--error {
+    border-left: 6px solid #ef4444; /* Red */
+  }
+  
+  .Toastify__toast--info {
+    border-left: 6px solid #3b82f6; /* Blue */
+  }
+  
+  .Toastify__close-button {
+    color: #fff;
+    opacity: 0.8;
+  }
+  
