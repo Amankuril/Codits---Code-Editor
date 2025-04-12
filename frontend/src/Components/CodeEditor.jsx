@@ -1,8 +1,9 @@
 import React, { useRef, forwardRef, useImperativeHandle } from "react";
 import Editor from "@monaco-editor/react";
 
-const CodeEditor = forwardRef(({ language = "java", defaultCode = "" }, ref) => {
+const CodeEditor = forwardRef(({ language = "javascript", defaultCode = "" }, ref) => {
   const editorRef = useRef(null);
+
 
   const handleEditorDidMount = (editor) => {
     editorRef.current = editor;
@@ -10,15 +11,23 @@ const CodeEditor = forwardRef(({ language = "java", defaultCode = "" }, ref) => 
 
   useImperativeHandle(ref, () => ({
     getValue: () => editorRef.current?.getValue(),
+    setValue: (value) => editorRef.current?.setValue(value),
   }));
 
   return (
     <Editor
       height="100%"
-      defaultLanguage={language}
+      language={language}
+      // defaultLanguage="javascript"
       defaultValue={defaultCode}
       onMount={handleEditorDidMount}
       theme="vs-dark"
+      options={{
+        padding: {
+          top: 20,
+          bottom: 16
+        }
+      }}
     />
   );
 });

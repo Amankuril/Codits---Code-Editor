@@ -11,7 +11,7 @@ const App = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Welcome to Easy DSA
+        Welcome to Codit
       </motion.h1>
 
       <motion.p
@@ -20,7 +20,7 @@ const App = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 1 }}
       >
-        Visualize your code in an interactive way!
+        Write and run code in your browser with ease.
       </motion.p>
 
       <motion.div

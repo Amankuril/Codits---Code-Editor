@@ -47,7 +47,7 @@ const Login = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
             >
-                Login to Easy DSA
+                Login to Codit
             </motion.h1>
 
             <motion.form
