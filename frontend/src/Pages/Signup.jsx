@@ -45,7 +45,7 @@ const Signup = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
             >
-                Sign Up for Easy DSA
+                Sign Up for Codit
             </motion.h1>
 
             <motion.form
