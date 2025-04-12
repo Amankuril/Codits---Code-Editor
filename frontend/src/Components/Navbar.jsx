@@ -46,7 +46,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center text-white">
         <Link to="/" className="text-2xl font-bold text-blue-400">
-          Easy DSA
+          Codit
         </Link>
 
         <div className="space-x-6 text-lg font-medium">
@@ -63,7 +63,7 @@ const Navbar = () => {
           ) : (
             <>
               <Link to="/visualizer" className="hover:text-blue-400 transition">
-                Visualizer
+                Editor
               </Link>
 
               <Link to="/login" className="hover:text-blue-400 transition">
